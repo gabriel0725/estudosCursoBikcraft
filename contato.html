@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    <script>
+        document.documentElement.classList.add("js");
+    </script>
 
 </head>
 
@@ -33,13 +36,13 @@
 
     <section class="introducao-interna interna_contato">
         <div class="container">
-            <h1>Contato</h1>
-            <p>tire suas dúvidas com a gente</p>
+            <h1 data-anime="400" class="fadeInDown">Contato</h1>
+            <p data-anime="800" class="fadeInDown">tire suas dúvidas com a gente</p>
         </div>
     </section>
 
     <!-- Começo form -->
-    <section class="contato container">
+    <section class="contato container fadeInDown" data-anime="1200">
         <form id="form_orçamento" class="contato_form grid-8" action="">
             <label for="nome">Nome</label>
             <input type="text" name="" id="nome">
@@ -73,7 +76,8 @@
         <a href="https://www.google.com.br/maps/place/Rua+Edson+Danillo+Dotto+
         -+Cidade+Tiradentes,+São+Paulo+-+SP,+08485-280/@-23.5913927,
         -46.4138275,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce6f64c64f467b:0x3ad4950a25a
-        d25a!8m2!3d-23.5913927!4d-46.4116335?hl=pt-BR&authuser=0" target="blank_" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="endereço da bikcraft"></a>
+        d25a!8m2!3d-23.5913927!4d-46.4116335?hl=pt-BR&authuser=0" target="blank_" class="grid-16"><img
+                src="img/endereco-bikcraft.jpg" alt="endereço da bikcraft"></a>
     </section>
 
     <!-- começo quebra -->
@@ -124,6 +128,10 @@
             </div>
         </div>
     </footer>
+
+	<script src="./js/simple-anime.js"></script>
+	<script src="./js/script.js"></script>
+
 </body>
 
 </html>

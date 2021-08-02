@@ -160,12 +160,12 @@ img {
 }
 
 .introducao-interna h1:after {
-     content: "";
-     display: block;
-     width: 60px;
-     height: 3px;
-     background: #FFF;
-     margin: 6px auto 10px auto;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #FFF;
+    margin: 6px auto 10px auto;
 }
 
 .subtitulo-interno {
@@ -317,7 +317,7 @@ img {
 
 /*Quebra*/
 
-.quebra { 
+.quebra {
     width: 100%;
     height: 220px;
     background: url("../img/bg-footer.jpg") no-repeat center;
@@ -386,4 +386,60 @@ img {
     width: 100%;
     background: #fec63e;
     padding: 20px 0;
+}
+
+/*javascript*/
+
+.js [data-slide] {
+    position: relative;
+}
+
+.js [data-slide]>* {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+}
+
+.js [data-slide]>.active {
+    position: relative;
+    opacity: 1;
+    transition: opacity 500ms;
+}
+
+.js [data-slide-nav] {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.js [data-slide-nav] button {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+    border: none;
+    padding: 0px;
+    border-radius: 6px;
+    text-indent: -99px;
+    overflow: hidden;
+    background: #1d1d1d;
+}
+
+.js [data-slide-nav] button.active {
+    background: #fec63e;
+}
+
+.js [data-anime] {
+    opacity: 0;
+    
+}
+
+.js .fadeInDown {
+    transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+    opacity: 1;
+    transform: none;
+    transition: opacity 800ms, transform 800ms;
 }
